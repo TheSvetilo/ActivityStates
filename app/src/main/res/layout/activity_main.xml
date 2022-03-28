@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardCodedText">
+
+    <TextView
+        android:id="@+id/numberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="casual"
+        android:text="0"
+        android:freezesText="true"
+        android:textColor="#8844ee"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/incrementButton"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Increment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numberTextView" />
+
+    <Button
+        android:id="@+id/randomColorButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Random Color"
+        app:layout_constraintEnd_toEndOf="@id/incrementButton"
+        app:layout_constraintStart_toStartOf="@id/incrementButton"
+        app:layout_constraintTop_toBottomOf="@id/incrementButton" />
+
+    <Button
+        android:id="@+id/switchVisibleButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Switch Visible"
+        app:layout_constraintEnd_toEndOf="@id/incrementButton"
+        app:layout_constraintStart_toStartOf="@id/incrementButton"
+        app:layout_constraintTop_toBottomOf="@id/randomColorButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
